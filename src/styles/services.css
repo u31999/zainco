@@ -1,0 +1,291 @@
+@import './root.css';
+
+.services-container {
+    background-color: var(--second-color);
+    
+}
+
+.s-main-container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.services-card-container {
+    display: flex !important;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.service-card {
+    border: none !important;
+    padding: 40px;
+    padding-bottom: 0% !important;
+    flex: 1 0;
+}
+
+.service-card > img {
+    height: 50% !important;
+}
+.card-body-container {
+    position: relative !important;
+    text-align: center !important;
+    padding: 85px 0 75px !important;
+}
+.card-body-container::before {
+    content: counter(service-counter, decimal-leading-zero);
+    font-size: 120px;
+    font-weight: 700;
+    font-family: Poppins,sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e7e7e7;
+    line-height: 1;
+    transition: .3s;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+}
+.card-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 115px;
+    font-size: 50px;
+    color: #2a7d2e;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body-container > .card-title {
+    font-size: 20px !important;
+    text-transform: uppercase;
+    color: #0b3d2c;
+    font-weight: 900;
+}
+
+.card-body-container .card-text {
+    font-family: Roboto,sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: var(--clr-common-text) !important;
+    margin-bottom: 15px !important;
+    line-height: 26px !important;
+}
+
+.services-promo {
+    background-color: #0b3d2c;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 160px;
+    display: flex;
+    position: relative;
+}
+.services-promo > img {
+    align-self: self-end;
+    height: 80%;
+    max-height: 80%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.promo-text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.promo-text-container .promo-text {
+    font-size: 30px;
+    line-height: 1.33;
+    margin-bottom: 0;
+    color: var(--clr-common-white);
+    text-transform: uppercase;
+    max-width: 850px;
+    font-weight: 900;
+    color: white;
+    text-align: initial;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    padding-bottom: 0px;
+}
+
+.quote-container .card {
+    background-color: transparent !important;
+    border: none;
+    display: flex;
+    text-align: initial;
+}
+.quote-container .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0px;
+}
+.quote-container .card .card-text {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.quote-container .card .card-body .card-title{
+    line-height: 1.16;
+    font-weight: 700;
+    color: #0b3d2c;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: -1.3px;
+
+}
+
+.quote-container > .quote-image-container {
+    height: 70%;
+    max-height: 70%;
+}
+.quote-container > .quote-image-container > img {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 2rem;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.founder img {
+    width: 70px;
+    height: 70px;
+}
+
+.founder h3 {
+    font-size: 16px;
+    color: #2a7d2e;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+    line-height: 1;
+}
+
+.founder h4 {
+    font-family: Poppins,sans-serif;
+    color: var(--clr-common-heading);
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: all .3s ease-out 0s;
+    letter-spacing: -1px;
+}
+
+.founder div button {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    background: #2a7d2e;
+    height: 60px;
+    line-height: 58px;
+    border-radius: 30px;
+    padding: 0 34px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.founder div button:hover {
+    color: #0b3d2c;
+    border: 1px solid #0b3d2c;
+    background-color: #fff;
+
+}
+
+.founder {
+    display: flex;
+    margin: 0px !important;
+}
+
+.sr-promo {
+    width: 100%;
+    min-width: 100%;
+    padding: 0px;
+    opacity: .2;
+    padding: 0px !important;
+}
+
+.sr-promo > img {
+        filter: invert(87%) sepia(25%) saturate(35%) hue-rotate(359deg) brightness(105%) contrast(90%);
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        height: 8rem;
+}
+
+
+@media only screen and ( max-width: 768px ){ 
+    .qoute-text-container > .card-body{
+        gap: 0px !important;
+    }
+
+    .qoute-text-container {
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .qoute-text-container > .card-body .card-title {
+        font-size: 20px !important;
+    }
+    .quote-container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .promo-text-container > .promo-text {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .services-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    p.founder div > h4 {
+        font-size: 15px !important;
+    }
+    p.founder div .founder-btn {
+        font-size: 12px !important;
+        padding: 0 15px !important;
+    }
+    .sr-promo > img {
+        height: 5rem !important;
+    }
+}
