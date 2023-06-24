@@ -58,6 +58,23 @@
     border-bottom-right-radius: 25px;
     box-shadow: black 2px 2px 2px;
 }
+nav.menu-nav-down div.show.navbar-collapse > ul {
+    background-color: #f8f5f0;
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    z-index: 10;
+    top: 0%;
+    right: 50%;
+    transform: translate(50%, 0%);
+    padding-top: 90px;
+}
+nav.menu-nav-down div.show.navbar-collapse > ul li a{
+    border-bottom: solid 1px green;
+}
+button.navbar-toggler {
+    z-index: 15;
+}
 
 @media only screen and ( max-width: 768px ){
 .font-size-35 { 
