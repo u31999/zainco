@@ -61,6 +61,7 @@ const Slide = () => {
               Lorem ipsum dolor sit amet, 
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </CardText>
+                        <Button className='read-more-btn'>Read More</Button>
           </CardBody>
         </Card>
         </div>
@@ -70,7 +71,6 @@ const Slide = () => {
       <div className='overlay-slide'>
         <Card className='overlay-content'>
           <CardTitle>Zainco</CardTitle>
-          <Button className='read-more-btn'>Read More</Button>
           <CardBody>
             <CardText>
               Lorem ipsum dolor sit amet, 
