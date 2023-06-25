@@ -14,6 +14,7 @@ import SlideOne from '../res/florian-giorgio-t6kr9bbHaVg-unsplash.jpg'
 import SlideTwo from '../res/gabriel-jimenez-jin4W1HqgL4-unsplash.jpg'
 import SlideThree from '../res/pankaj-shah-1ff_i7jO-4g-unsplash.jpg'
 
+import { Button, Card, CardBody, CardText, CardTitle } from 'reactstrap';
 const Slide = () => {
    
     
@@ -26,20 +27,59 @@ const Slide = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}
       direction='vertical'
-      loop={true}
+      //loop={true}
       effect='fade'
-      autoplay={{
-        delay: 700
-      }}
+      //autoplay={{
+        //delay: 700
+      //}
+      //}
     >
       <SwiperSlide data-swiper-animation="animate__fadeIn">
-        <img src={SlideOne} alt='slide'/>
+      <div className='overlay-slide'>
+        <Card className='overlay-content'>
+        <CardTitle>Zainco</CardTitle>
+        <CardBody>
+            <CardText>
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </CardText>
+            <Button className='read-more-btn'>Read More</Button>
+          </CardBody>
+        </Card>
+      </div>
+      <img src={SlideOne} alt='slide'/>
       </SwiperSlide>
       <SwiperSlide>
       <img src={SlideTwo} alt='slide'/>
+      <div className='overlay-slide'>
+        <Card className='overlay-content'>
+        <CardTitle>
+          Zainco
+        </CardTitle> 
+        <CardBody>
+            <CardText>
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </CardText>
+          </CardBody>
+        </Card>
+        </div>
       </SwiperSlide>
       <SwiperSlide>
       <img src={SlideThree} alt='slide'/>
+      <div className='overlay-slide'>
+        <Card className='overlay-content'>
+          <CardTitle>Zainco</CardTitle>
+          <Button className='read-more-btn'>Read More</Button>
+          <CardBody>
+            <CardText>
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </CardText>
+            <Button className='read-more-btn'>Read More</Button>
+          </CardBody>
+        </Card>
+      </div>
       </SwiperSlide>
     </Swiper>
         </div>
