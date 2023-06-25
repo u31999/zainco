@@ -20,11 +20,11 @@ const TopMenu = () => {
                     </Col>
                 </Row>
             </Col>
-            <Col className='d-flex'>
+            <Col className='d-flex s-col'>
                 <Row style={{width: '100%'}} className='font-size-13'>
-                    <Col className='grean-color flex-1-5 d-flex gap-10 align-items-center time-m'>
+                    <Col className='grean-color flex-1-5 d-flex gap-10 align-items-center time-m s-row'>
                         <FaClock className='font-size-35'/>
-                        <span>
+                        <span className='open-time'>
                         Mon - Fri: 9:00 - 19:00/ Closed on Weekends
                         </span>
                     </Col>

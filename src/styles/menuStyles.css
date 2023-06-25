@@ -77,6 +77,31 @@ button.navbar-toggler {
 }
 
 @media only screen and ( max-width: 768px ){
+.menuContainer {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.top-menu {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.top-menu .row > .contact, .top-menu .row > .contact + div {
+ padding-left: 10px !important;
+ width: 100%;
+ justify-content: flex-start !important;
+ font-size: 12px;
+ gap: 10px;
+}
+.s-col {
+    padding-right: 0px !important;
+}
+.open-time {
+    font-size: 11px !important;
+}
+.s-row {
+    gap: 10px;
+    justify-content: flex-end;
+}
 .font-size-35 { 
     font-size: 35px;
 }
