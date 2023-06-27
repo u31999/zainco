@@ -57,7 +57,7 @@
     padding: 2rem;
 }
 
-.overlay-content > .card-title {
+.overlay-content .card-title {
     color: white !important;
     text-shadow: black 2px 2px 2px !important;
     font-weight: 900 !important;
@@ -66,7 +66,7 @@
     font-family: 'circular' !important;
     border-bottom: 4px solid orangered;
 }
-.overlay-content > .card-body .card-text {
+.overlay-content .card-body .card-text {
   font-size: 20px !important;
     font-weight: 600 !important;
     letter-spacing: 1px !important;
@@ -86,4 +86,18 @@
     letter-spacing: 2px !important;
     font-family: 'circular' !important;
     box-shadow: black 2px 2px 2px;
+}
+
+@media only screen and ( max-width: 768px ){ 
+  .overlay-content {
+    width: 90%;
+  }
+
+  .overlay-content .card-body .card-text {
+    font-size: 14px !important;
+  }
+  .overlay-content .read-more-btn {
+    font-size: 14px !important;
+    padding: 15px !important;
+  }
 }

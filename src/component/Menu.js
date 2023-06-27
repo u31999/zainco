@@ -29,7 +29,7 @@ const TopMenu = () => {
                         </span>
                     </Col>
                     <Col className='social-icons-container flex-0-5'>
-                        <Row>
+                        <Row className='s-row'>
                             <Col className='grean-color contact opacity-75'>
                                 <FaYoutube />
                             </Col>

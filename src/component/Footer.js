@@ -4,6 +4,10 @@ import { Col, Row } from 'reactstrap';
 import { FaPhone, FaEnvelope, FaMapMarked, FaYoutube, FaLinkedin, FaTwitter, FaFacebook, FaArrowAltCircleUp } from 'react-icons/fa'
 import logo from '../res/icons/zainco.jpg'
 const Footer = () => {
+    const goUp = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    }
     return (
         <div className='footer'>
             <Row className='top-footer'>
@@ -88,7 +92,7 @@ const Footer = () => {
                 </Col>
                 <Col className='copyright-row'>COPYRIGHT & DESIGN BY @AhmedHassan - 2023</Col>
                 <Col className='arrow-container'>
-                    <FaArrowAltCircleUp className='up-arrow'/>
+                    <FaArrowAltCircleUp className='up-arrow' onClick={() => goUp()}/>
                 </Col>
                 </div>
             </Row>

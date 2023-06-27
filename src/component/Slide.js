@@ -27,12 +27,12 @@ const Slide = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}
       direction='vertical'
-      //loop={true}
+      loop={true}
       effect='fade'
-      //autoplay={{
-        //delay: 700
-      //}
-      //}
+      autoplay={{
+        delay: 1200
+      }
+      }
     >
       <SwiperSlide data-swiper-animation="animate__fadeIn">
       <div className='overlay-slide'>
@@ -50,28 +50,25 @@ const Slide = () => {
       <img src={SlideOne} alt='slide'/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={SlideTwo} alt='slide'/>
       <div className='overlay-slide'>
-        <Card className='overlay-content'>
-        <CardTitle>
-          Zainco
-        </CardTitle> 
+         <Card className='overlay-content'>
+        <CardTitle>Zainco</CardTitle>
         <CardBody>
             <CardText>
               Lorem ipsum dolor sit amet, 
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </CardText>
-                        <Button className='read-more-btn'>Read More</Button>
+            <Button className='read-more-btn'>Read More</Button>
           </CardBody>
         </Card>
         </div>
+              <img src={SlideTwo} alt='slide'/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={SlideThree} alt='slide'/>
       <div className='overlay-slide'>
         <Card className='overlay-content'>
-          <CardTitle>Zainco</CardTitle>
-          <CardBody>
+        <CardTitle>Zainco</CardTitle>
+        <CardBody>
             <CardText>
               Lorem ipsum dolor sit amet, 
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -80,6 +77,7 @@ const Slide = () => {
           </CardBody>
         </Card>
       </div>
+            <img src={SlideThree} alt='slide'/>
       </SwiperSlide>
     </Swiper>
         </div>
